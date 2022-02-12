@@ -9,6 +9,7 @@ var gpa6 = document.querySelector('#gpa6 input')
 var gpa7 = document.querySelector('#gpa7 input')
 var gpa8 = document.querySelector('#gpa8 input');
 var msg  = document.querySelector('.result');
+var msg2  = document.querySelector('.result2');
 
 console.log(gpa1.parentElement);
 
@@ -39,8 +40,8 @@ form.addEventListener('submit',function(e){
 
     for(var i = 0; i<myArray.length; i++){
         if(myArray[i].match(/[a-z]+/) || myArray[i].match(/[A-Z]+/) || myArray[i].match(/[$@#&!]+/)){
-            msg.innerHTML = "Sorry, please enter the correct input."
-            msg.className = 'result incorrect'
+            msg2.innerHTML = "Sorry, please enter the correct input."
+            msg2.className = 'result incorrect'
             count++;
         }
 
