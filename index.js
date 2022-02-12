@@ -41,7 +41,7 @@ form.addEventListener('submit',function(e){
     for(var i = 0; i<myArray.length; i++){
         if(myArray[i].match(/[a-z]+/) || myArray[i].match(/[A-Z]+/) || myArray[i].match(/[$@#&!]+/)){
             msg2.innerHTML = "Sorry, please enter the correct input."
-            msg2.className = 'result incorrect'
+            msg2.className = 'result2 incorrect'
             count++;
         }
 
