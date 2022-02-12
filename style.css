@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.main{
+    width: 300px;
+    
+}
+.main div{
+    width: 100%;
+}
+.main div input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px solid #f0f0f0;
+}
+button{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.result.incorrect{
+    color: red;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.671);
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+
+}
+footer a{
+    color: aquamarine;
+}
