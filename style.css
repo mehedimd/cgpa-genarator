@@ -38,6 +38,9 @@ button{
 .result.incorrect{
     color: red;
 }
+.result.correct{
+    color: rgb(37, 67, 238);
+}
 
 footer{
     background-color: rgba(0, 0, 0, 0.671);

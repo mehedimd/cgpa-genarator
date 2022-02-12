@@ -33,19 +33,28 @@ form.addEventListener('submit',function(e){
     var r6 = (v5*20)/100;
     var r7 = (v6*25)/100;
     var r8 = (v7*15)/100;
-    var finalResult = r1 + r2 + r3 + r4 + r5 + r6 + r7 + r8;
-    finalResult = finalResult.toString().slice(0,4);
+
+    var count = 0;
+
 
     for(var i = 0; i<myArray.length; i++){
         if(myArray[i].match(/[a-z]+/) || myArray[i].match(/[A-Z]+/) || myArray[i].match(/[$@#&!]+/)){
             msg.innerHTML = "Sorry, please enter the correct input."
             msg.className = 'result incorrect'
-            
+            count++;
         }
-        else{
-            msg.innerHTML = "Your Final CGPA is -"+ finalResult;
-        }
+
     }
+    if(count === 0){
+        var finalResult = r1 + r2 + r3 + r4 + r5 + r6 + r7 + r8;
+        finalResult = finalResult.toString().slice(0,4);
+        msg.className = 'result correct'
+        msg.innerHTML = "Your Final CGPA is -"+ finalResult;
+    }
+
+    count = 0;
+
+  
 
  
 
