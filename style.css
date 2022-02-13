@@ -53,3 +53,18 @@ footer{
 footer a{
     color: aquamarine;
 }
+
+
+/*probidhan*/
+#probidhan{
+    width: 300px;
+}
+#probidhan select{
+    width: 100%;
+    padding: 10px;
+    border:2px solid #f0f0f0;
+    cursor: pointer;
+}
+#probidhan select option{
+    padding: 15px;
+}

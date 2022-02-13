@@ -11,8 +11,6 @@ var gpa8 = document.querySelector('#gpa8 input');
 var msg  = document.querySelector('.result');
 var msg2  = document.querySelector('.result2');
 
-console.log(gpa1.parentElement);
-
 form.addEventListener('submit',function(e){
     e.preventDefault();
     
@@ -26,15 +24,6 @@ form.addEventListener('submit',function(e){
     var v8 = gpa8.value;
     var myArray = [v1 , v2 ,v3, v4 ,v5 ,v6, v7 , v8];
 
-    var r1 = (v1*5)/100;
-    var r2 = (v2*5)/100;
-    var r3 = (v3*5)/100;
-    var r4 = (v3*10)/100;
-    var r5 = (v4*15)/100;
-    var r6 = (v5*20)/100;
-    var r7 = (v6*25)/100;
-    var r8 = (v7*15)/100;
-
     var count = 0;
 
 
@@ -46,6 +35,38 @@ form.addEventListener('submit',function(e){
         }
 
     }
+
+    
+        var select = document.querySelector('#select');
+   
+        if(select.value == 10){
+            var r1 = (v1*5)/100;
+            var r2 = (v2*5)/100;
+            var r3 = (v3*5)/100;
+            var r4 = (v4*15)/100;
+            var r5 = (v5*15)/100;
+            var r6 = (v6*20)/100;
+            var r7 = (v7*25)/100;
+            var r8 = (v8*10)/100;
+
+            console.log("10")
+        }
+        else{
+            var r1 = (v1*5)/100;
+            var r2 = (v2*5)/100;
+            var r3 = (v3*5)/100;
+            var r4 = (v4*10)/100;
+            var r5 = (v5*15)/100;
+            var r6 = (v6*20)/100;
+            var r7 = (v7*25)/100;
+            var r8 = (v8*15)/100;
+
+            console.log('16')
+        }
+
+
+
+
     if(count === 0){
         var finalResult = r1 + r2 + r3 + r4 + r5 + r6 + r7 + r8;
         finalResult = finalResult.toString().slice(0,4);
@@ -54,11 +75,6 @@ form.addEventListener('submit',function(e){
     }
 
     count = 0;
-
-  
-
- 
-
   
 })
 
